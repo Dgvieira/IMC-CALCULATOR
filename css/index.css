@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Aldo';
+    src: url('https://dgvieira.github.io/Projeto-IMC-CALCULATOR/fonts/AldotheApache.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%; /* 10px */
+
+}
+
+body {
+    background-color: rgb(201, 201, 201);
+    font-family: 'Montserrat';
+    
+}
+
+
+.page-tittle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10.0rem;
+    background-color: rgb(11, 11, 11);
+}
+
+.page-tittle h1 {
+    font-family: 'Aldo';
+    font-size: 5.0rem;
+    text-align: center;
+    color: #7fff00;
+    align-self: center;
+    margin-top: 1.2rem;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin: 15.0rem auto 5.0rem auto;
+    background-color: rgb(11, 11, 11);
+
+}
+
+.section-tittle {
+    font-size: 3.0rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    color: #7fff00;
+}
+
+.inputs { 
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.data-input {
+    margin: 6.0rem auto 0 auto;
+}
+
+.inputs input {
+    width: 18.0rem;
+    height: 3.5rem;
+    margin: 0.5rem 2.0rem 0.5rem 2.0rem;
+    padding-left: 1.0rem;
+    background-color: rgb(45, 45, 45);
+    border: none;
+    border-radius: 0.5rem;
+    color: #7fff00;
+}
+
+input::placeholder {
+    color: #7fff00;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+
+.buttons button {
+    font-family: 'Montserrat';
+    font-size: 1.7rem;
+    font-weight: 500;
+    width: 18.0rem;
+    height: 3.5rem;
+    margin: 0.5rem 2.0rem 0.5rem 2.0rem;
+    cursor: pointer;
+    background-color: #7fff00;
+    border: none;
+    border-radius: 0.5rem;
+    transition: 0.2s;
+}
+
+.buttons button:active {
+    background-color: rgb(255, 255, 255);
+}
+
+.imc-div {
+    font-weight: 500;
+    display: flex;
+    width: 22.0rem;
+    height: 6.0rem;
+    border-radius: 0.5rem;
+    justify-content: center;
+    margin: 20px auto;
+    background-color: #7fff00;
+}
+
+.imc-div span {
+    font-size: 2.5rem;
+    align-self: center;
+}
+
+#imc-info {
+    margin-left: 1.0rem;
+}
+
+.invisible {
+    display: none;
+}
+
+.imc-interpretation {
+    width: 40%;
+    border: none;
+    margin: 0 auto;
+}
+
+.imc-reference h2 {
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    background-color: rgb(11, 11, 11);
+}
+
+.imc-table {
+    width: 100%;
+    font-size: 1.6rem;
+    border-collapse: collapse;
+    margin: 1.5rem auto 0 auto;
+}
+
+.imc-table th {
+    padding: 5px;
+}
+
+.imc-table td {
+    text-align: center;
+    border-top: 1px solid black;
+    padding: 5px;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(11, 11, 11);
+    height: 20.0rem;
+    margin-top: 10.0rem;
+    justify-content: center;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #7fff00;
+    
+}
+
+footer i {
+    color: #7fff00;
+    font-size: 2.5rem;
+    transition: 0.5s;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.0rem;
+    margin-top: 1.5rem;
+}
+
+footer i:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+
+@media (max-width: 425px) {
+
+
+
+    .page-tittle h1 {
+        font-size: 3.5rem;
+    }
+
+    .calculator {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputs input {
+        width: 20.0rem;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttons button {
+        width: 20.0rem;
+    }
+
+    .imc-div {
+        width: 20.0rem;
+    }
+
+    .imc-div span {
+        font-size: 1.7rem;
+    }
+
+    .imc-interpretation {
+        width: 100%;
+    }
+
+    .imc-reference h2 {
+        border-radius: 0;
+    }
+
+    .section-tittle{
+        font-size: 2.5rem;
+    }
+
+    .imc-table {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    footer p {
+        font-size: 1.4rem;
+    }
+
+    footer i {
+        font-size: 2.0rem;
+    }
+}
+
+/*--------------- MOBILE --------------- */
+
+@media (min-width: 425px) and (max-width: 767px) {
+
+    .page-tittle h1 {
+        font-size: 3.5rem;
+    }
+
+    .calculator {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputs input {
+        width: 25.0rem;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttons button {
+        width: 25.0rem;
+    }
+
+    .imc-div {
+        width: 25.0rem;
+    }
+
+    .imc-div span {
+        font-size: 1.7rem;
+    }
+
+    .imc-interpretation {
+        width: 100%;
+    }
+
+    .imc-reference h2 {
+        border-radius: 0;
+    }
+
+    .section-tittle{
+        font-size: 2.5rem;
+    }
+
+    .imc-table {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    footer p {
+        font-size: 1.4rem;
+    }
+
+    footer i {
+        font-size: 2.0rem;
+    }
+}
+
+/*--------------- TABLET --------------- */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+
+    .page-tittle h1 {
+        font-size: 3.5rem;
+    }
+
+    .calculator {
+        width: 70%;
+        border-radius: 0.5rem;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputs input {
+        width: 25.0rem;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttons button {
+        width: 25.0rem;
+    }
+
+    .imc-div {
+        width: 25.0rem;
+    }
+
+    .imc-div span {
+        font-size: 1.7rem;
+    }
+
+    .imc-interpretation {
+
+        width: 70%;
+    }
+
+    .imc-reference h2 {
+        width: 100%;
+
+        
+    }
+
+    .section-tittle{
+        font-size: 2.5rem;
+    }
+
+    .imc-table {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    footer p {
+        font-size: 1.4rem;
+    }
+
+    footer i {
+        font-size: 2.0rem;
+    }
+}
+
+/*--------------- NOTEBOOK --------------- */
+
+@media (min-width: 1024px) and (max-width: 1265px) {
+
+    .page-tittle h1 {
+        font-size: 3.5rem;
+    }
+
+    .calculator {
+        width: 60%;
+        border-radius: 0.5rem;
+    }
+
+    .inputs input {
+        width: 18.0rem;
+    }
+
+    .buttons button {
+        width: 18.0rem;
+    }
+
+    .imc-div {
+        width: 18.0rem;
+    }
+
+    .imc-div span {
+        font-size: 1.7rem;
+    }
+
+    .imc-interpretation {
+
+        width: 60%;
+    }
+
+    .imc-reference h2 {
+        width: 100%;
+
+        
+    }
+
+    .section-tittle{
+        font-size: 2.5rem;
+    }
+
+    .imc-table {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    footer p {
+        font-size: 1.4rem;
+    }
+
+    footer i {
+        font-size: 2.0rem;
+    }
+}

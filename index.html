@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://dgvieira.github.io/Projeto-IMC-CALCULATOR/css/index.css">
+    <title>IMC CALCULATOR</title>
+</head>
+<body>
+    <header>
+        <div class="page-tittle">
+            <h1>IMC CALCULATOR</h1>
+        </div>
+    </header>
+    <main>
+        <section class="calculator">
+            <h2 class="section-tittle">Calcule seu IMC</h2>
+            <div class="data-input">
+                <div class="inputs"> 
+                    <input type="number" id="height-input" placeholder="Altura (ex.: 1,70)">
+                    <input type="number" id="weight-input" placeholder="Peso (ex.: 69,2)">
+                </div>
+            
+            <div class="buttons">
+                <button id="calculator-button">Calcular</button>
+                <button id="clear-button">Limpar</button>
+
+            </div>
+                
+            </div>
+
+            <div class="output">
+                <div class="imc-div">
+                    <span >SEU IMC:</span>
+                    <span class="invisible" id="imc-info"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="imc-interpretation">
+            <div class="imc-reference">
+                <h2 class="section-tittle">Veja a interpretação do IMC</h2>
+                <table class="imc-table">
+                    <thead>
+                        <tr>
+                            <th>IMC</th>
+                            <th>CLASSIFICAÇÃO</th>
+                            <th>OBESIDADE (GRAU)</th>
+                        </tr>
+                        
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>MENOR QUE 18,5</td>
+                            <td>MAGREZA</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>ENTRE 18,5 E 24,9</td>
+                            <td>NORMAL</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>ENTRE 25,0 E 29,9</td>
+                            <td>SOBREPESO</td>
+                            <td>I</td>
+                        </tr>
+                        <tr>
+                            <td>ENTRE 30,0 E 39,9</td>
+                            <td>OBESIDADE</td>
+                            <td>II</td>
+                        </tr>
+                        <tr>
+                            <td>MAIOR QUE 40,0	</td>
+                            <td>OBESIDADE GRAVE	</td>
+                            <td>III</td>
+                        </tr>
+                
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Douglas Vieira</p>
+        <div class="social-icons">
+            <a href="https://github.com/Dgvieira" target="_blank"> <i class="fa-brands fa-github"></i> </a> 
+            <a href="https://www.instagram.com/dgvieira1/" target="_blank"> <i class="fa-brands fa-instagram"></i> </a> 
+            <a href="https://www.linkedin.com/in/douglas-vieira-a66469221/" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a> 
+        </div>
+    </footer>
+
+    
+</body>
+
+<script src="https://dgvieira.github.io/Projeto-IMC-CALCULATOR/js/limpar-campos.js"></script>
+<script src="https://dgvieira.github.io/Projeto-IMC-CALCULATOR/js/calcula-imc.js"></script>
+<script src="https://kit.fontawesome.com/fcee9dd6e7.js" crossorigin="anonymous"></script>
+
+</html>
